@@ -89,8 +89,8 @@ if __name__ == '__main__':
     elif login_status != "操作成功":
         print("我也不知道发生啥了，自己手动北温打吧？")
         print("返回的登录结果是：  " + login_status)
-        tools.server(sckey, "小北体温自动上报失败，请手动上报")
-        tools.mail(my_sender, my_pass, my_user, "小北体温自动上报失败，请手动上报")
+        tools.server(sckey, "小北体温上报失败，请手动上报")
+        tools.mail(my_sender, my_pass, my_user, "小北体温上报失败，请手动上报")
     else:
         # 拿到 token
         login_token = json_login_r["token"]
