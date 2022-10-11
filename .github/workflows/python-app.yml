@@ -1,6 +1,6 @@
 # 每天8:00执行
 
-name: "beiwenda"
+name: "孙"
 
 on:
   push:
@@ -21,7 +21,6 @@ jobs:
       - name: install requests
         run: |
           python -m pip install requests
-
       - name: run main.py
         env:
           IDCODE: ${{ secrets.IDCODE }}
